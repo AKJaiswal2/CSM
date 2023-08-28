@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Image Upload App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Image Upload App</h1>
+      <div id="loginForm">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="Email" />
+        <input type="password" id="loginPassword" placeholder="Password" />
+        <button onclick="login()">Login</button>
+      </div>
+      <div id="signupForm">
+        <h2>Sign Up</h2>
+        <input type="text" id="signupName" placeholder="Full Name" />
+        <input type="email" id="signupEmail" placeholder="Email" />
+        <input type="password" id="signupPassword" placeholder="Password" />
+        <button onclick="signup()">Sign Up</button>
+      </div>
+      <!-- ... (other HTML code) ... -->
+      <div id="subscriptionTier" style="display: none">
+        <h2>Subscription Tier</h2>
+        <label>
+          <input type="radio" name="subscription" value="free" checked /> Free
+        </label>
+        <label>
+          <input type="radio" name="subscription" value="pro" /> Pro
+        </label>
+        <button onclick="updateSubscription()">Update Subscription</button>
+      </div>
+      <!-- ... (other HTML code) ... -->
+
+      <div id="imageUploadForm" style="display: none">
+        <h2>Upload Image</h2>
+        <input type="file" id="imageFile" />
+        <button onclick="uploadImage()">Upload</button>
+      </div>
+      <div id="imageGrid" style="display: none">
+        <h2>Uploaded Images</h2>
+        <div id="imageList"></div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -1,5 +1,5 @@
 // API URL
-const apiUrl = "http://localhost:5000";
+const apiUrl = "https://csm-assignment.onrender.com";
 
 // Track user subscription tier
 let userSubscription = "free"; // 'free' or 'pro'
